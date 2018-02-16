@@ -11,6 +11,10 @@
     background-size: cover;
 }
 
+.home-section button {
+    width: 15%;
+}
+
 .top-wrapper {
     display: inline-flex;
     height: 100%;
@@ -18,4 +22,13 @@
 
 .selector-for-some-widget {
     box-sizing: content-box;
+}
+
+.womans-community-side, .mens-community-side h4 {
+    color: white;
+}
+
+.womans-logo-container, .mens-logo-container {
+    height: 170px;
+    margin: 150px 0px 80px 0px;
 }
