@@ -1,20 +1,21 @@
-/*.section1 {
-    background-color: blue;
-}
-
-.section2 {
-    background-color: black;
-}
-
-.section3 {
-    background-color: red;
-}
-
-.section4 {
-    background-color: yellow;
-}*/
-
 .section {
     font-size: 6em;
     text-align: center;
+}
+
+.home-section {
+    background: url(/assets/img/top-image-desktop.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-wrapper {
+    display: inline-flex;
+    height: 100%;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
 }
