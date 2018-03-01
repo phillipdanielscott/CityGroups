@@ -11,24 +11,30 @@
     background-size: cover;
 }
 
-.home-section button {
-    width: 15%;
-}
-
-.top-wrapper {
-    display: inline-flex;
-    height: 100%;
-}
-
-.selector-for-some-widget {
-    box-sizing: content-box;
-}
-
-.womans-community-side, .mens-community-side h4 {
+.woman-group-side span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     color: white;
+    font-size: 25px;
 }
 
-.womans-logo-container, .mens-logo-container {
-    height: 170px;
-    margin: 150px 0px 80px 0px;
+.home-wrapper img {
+    max-width: 350px;
+}
+
+.top-title .element {
+    margin: 50px 0px;
+}
+
+.top-title .image-element {
+    margin: 100px 0px;
+}
+
+.group-buttons button {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    padding: 11px 30px;
 }
