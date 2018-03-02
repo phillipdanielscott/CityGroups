@@ -1,6 +1,3 @@
-// var mensGroups = require('./mensgroup.json');
-// var womensGroups = require('./womensgroup.json');
-
 $(document).ready(function() {
     $('#wrapper').fullpage({
         sectionsColor: ['', '#d5d5d5', '#d5d5d5', '#d5d5d5', '#d5d5d5']
@@ -21,10 +18,20 @@ $(document).ready(function() {
       var groups = JSON.parse(e.target.responseText);
 
       groups.forEach(function(group) {
-        $('#group-table').append('<tr><</tr>')
+        $('#group-table')
+        .append(
+          `<tr>
+            <td>${group.name}</td>
+            <td>${group.location}</td>
+            <td>${group.dayofweek}</td>
+            <td>${group.time}</td>
+            <td>${group.kids}</td>
+            <td>
+              <a class="signup-btn" href="${group.signuplink}" target="blank">Sign Up</a>
+            </td>
+          </tr>`
+        );
       })
-
-      console.log('groups', groups);
     }
 
     function loadWomensGroups () {
