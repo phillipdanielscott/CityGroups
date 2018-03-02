@@ -423,6 +423,9 @@ $(document).ready(function() {
     });
 
     addDayFilterListeners();
+    $('#anyday-filter').click('click', function() {
+      dayFilter('any');
+    });
 
     function filteredGenders() {
       var found = []
@@ -472,7 +475,10 @@ $(document).ready(function() {
     function dayFilter(day) {
       groupsList.filter(function(group) {
         var values = group.values();
-        if(values.dayofweek === day & values.gender === localStorage.gender) {
+        if(day === 'any' && values.gender === localStorage.gender) {
+          return true
+        }
+        if(values.dayofweek === day && values.gender === localStorage.gender) {
           return true;
         } else {
           return false;
@@ -515,6 +521,7 @@ $(document).ready(function() {
     function clearFilters() {
       genderFilter();
     }
+
     $('#clear-filters').click("click", clearFilters);
 
     $('#no-childcare').click("click", function() {
@@ -566,4 +573,26 @@ $(document).ready(function() {
     localStorage.setItem('gender', 'male');
     genderFilter();
     createFilteredCitys();
+
+    $('.signuplink').css({
+      "color": "#292b2c",
+      "text-decoration": "none",
+      "display": "inline-block",
+      "padding": "6px 12px",
+      "margin-bottom": "0",
+      "font-size": "14px",
+      "font-weight": "normal",
+      "line-height": "1.428571429",
+      "text-align": "center",
+      "white-space": "nowrap",
+      "vertical-align": "middle",
+      "cursor": "pointer",
+      "border": "1px solid #212529",
+      "-webkit-user-select": "none",
+      "-moz-user-select": "none",
+      "-ms-user-select": "none",
+      "-o-user-select": "none",
+      "user-select": "none"
+    });
+
 });
