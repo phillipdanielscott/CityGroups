@@ -1,17 +1,28 @@
+body {
+    background-color: #d5d5d5;
+    height: 2000px;
+}
+
 .section {
     font-size: 6em;
     text-align: center;
 }
 
-.home-section {
-    background: url(/assets/img/top-image-desktop.jpg) no-repeat center center fixed;
+.hero-image-container {
+    background: url(/assets/img/top-image-desktop.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: contain;
+    height: 1800px;
 }
 
-.woman-group-side span {
+.top-title-text h3 {
+    text-align: center;
+    color: white;
+}
+
+.woman-group-side, .mens-group-side span {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: white;
@@ -38,3 +49,60 @@
     font-family: 'Roboto', sans-serif;
     padding: 11px 30px;
 }
+
+.image-element img {
+    display: block;
+    margin: 0 auto;
+}
+
+.group-buttons button {
+    display: block;
+}
+
+.title-content-wrapper {
+    margin-top: 12%;
+}
+
+
+/*SECOND SECTION*/
+
+
+/*.womans-group-wrapper {
+    padding: 20px;
+}
+
+.header-title-womans {
+    margin-top: 50px;
+}
+
+.header-title-womans h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.authentic-text {
+    margin: 50px 0px;
+}
+
+.authentic-text span {
+    font-weight: 300;
+    font-size: 75px;
+    margin-bottom: 150px;
+    letter-spacing: 3px;
+}
+
+.section-main-content p {
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.enough-text h6 {
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 70px;
+}*/
