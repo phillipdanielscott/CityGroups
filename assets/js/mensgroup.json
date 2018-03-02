@@ -1,0 +1,162 @@
+[
+ {
+   "name": "Name",
+   "location": "Location ",
+   "dayofweek": "Day of the Week",
+   "time": "Time",
+   "kids": "Kids allowed?",
+   "signuplink": "Sign Up Links"
+ },
+ {
+   "name": "Paul Di Giordano & Nate Wolde",
+   "location": "Midtown Sacramento ",
+   "dayofweek": "Tuesday ",
+   "time": "7:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/199/responses/new"
+ },
+ {
+   "name": "Cody Williams & Jonathan Sweetser",
+   "location": "El Dorado Hills",
+   "dayofweek": "Monday",
+   "time": "6:30 AM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/223/responses/new"
+ },
+ {
+   "name": "Brandon Waring & Rayshaun Smith",
+   "location": "Folsom ",
+   "dayofweek": "Tuesday",
+   "time": "6:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/224/responses/new"
+ },
+ {
+   "name": "Andrew Davis",
+   "location": "Folsom",
+   "dayofweek": "Wednesday ",
+   "time": "7:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/237/responses/new"
+ },
+ {
+   "name": "Erik Bagley",
+   "location": "Hwy 50 Tahoe Park",
+   "dayofweek": "Thursday",
+   "time": "7:00 AM",
+   "kids": "Yes",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/238/responses/new"
+ },
+ {
+   "name": "Adrian Weller",
+   "location": "Folsom ",
+   "dayofweek": "Tuesday",
+   "time": "6:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/225/responses/new"
+ },
+ {
+   "name": "Chris Breyer",
+   "location": "Cameron Park",
+   "dayofweek": "Wednesday",
+   "time": "6:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/226/responses/new"
+ },
+ {
+   "name": "Gabriel Fitzgerald",
+   "location": "Loomis",
+   "dayofweek": "Tuesday",
+   "time": "6:30 PM",
+   "kids": "Yes",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/227/responses/new"
+ },
+ {
+   "name": "Steve Woodcock",
+   "location": "Placerville",
+   "dayofweek": "Saturday",
+   "time": "8:00 AM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/228/responses/new"
+ },
+ {
+   "name": "Augustin Murar",
+   "location": "Orangevale",
+   "dayofweek": "Thursday ",
+   "time": "6:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/229/responses/new"
+ },
+ {
+   "name": "Michael Miller",
+   "location": "El Dorado Hills ",
+   "dayofweek": "Wednesday",
+   "time": "7:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/230/responses/new"
+ },
+ {
+   "name": "Josh Minor & Fred Butson & Lucas Robinson",
+   "location": "El Dorado Hills ",
+   "dayofweek": "Monday",
+   "time": "7:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/231/responses/new"
+ },
+ {
+   "name": "Jeff Kreiser",
+   "location": "Folsom",
+   "dayofweek": "Monday",
+   "time": "7:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/232/responses/new"
+ },
+ {
+   "name": "Bruce Kynaston & Joaquin Beza",
+   "location": "Elk Grove",
+   "dayofweek": "Wednesday",
+   "time": "7:00 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/233/responses/new"
+ },
+ {
+   "name": "Ben Serpell & Abe Haynes",
+   "location": "El Dorado Hills",
+   "dayofweek": "Mondays ",
+   "time": "7:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/234/responses/new"
+ },
+ {
+   "name": "Harvey Smith",
+   "location": "Lincoln ",
+   "dayofweek": "Monday",
+   "time": "7:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/235/responses/new"
+ },
+ {
+   "name": "Alan Garrett",
+   "location": "Citrus Heights",
+   "dayofweek": "Thursday",
+   "time": "7:00 PM",
+   "kids": "Yes",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/236/responses/new"
+ },
+ {
+   "name": "Chris Head",
+   "location": "Carmichael",
+   "dayofweek": "Wednesday",
+   "time": "8:30 PM",
+   "kids": "No",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/240/responses/new"
+ },
+ {
+   "name": "Nathan Grensavitch",
+   "location": "Roseville",
+   "dayofweek": "Monday",
+   "time": "7:00 PM",
+   "kids": "Yes",
+   "signuplink": ""
+ }
+]
