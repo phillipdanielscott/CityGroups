@@ -19,7 +19,7 @@ export default groups = [
  },
  {
    "name": "Brandon Waring & Rayshaun Smith",
-   "location": "Folsom ",
+   "location": "Folsom",
    "dayofweek": "Tuesday",
    "time": "6:30 PM",
    "kids": "No",
@@ -46,7 +46,7 @@ export default groups = [
  },
  {
    "name": "Adrian Weller",
-   "location": "Folsom ",
+   "location": "Folsom",
    "dayofweek": "Tuesday",
    "time": "6:30 PM",
    "kids": "No",
@@ -289,7 +289,7 @@ export default groups = [
  },
  {
    "name": "Sandy Perez",
-   "location": "Elk Grove ",
+   "location": "Elk Grove",
    "dayofweek": "Tuesday",
    "time": "7:00 PM",
    "kids": "No",

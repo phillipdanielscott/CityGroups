@@ -143,12 +143,10 @@
                 <div class="col-md-6 offset-md-3">
                     <div id="groups-list">
                         <div class="dropdown">
-                            <button class="btn btn-link" type="button" id="child-care" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              All Childcare
+                            <button class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select City
                           </button>
-                            <div class="dropdown-menu" aria-labelledby="child-care">
-                                <a class="dropdown-item" id='no-childcare'>No Childcare Needed</a>
-                                <a class="dropdown-item" id='yes-childcare'>Childcare Needed</a>
+                            <div id='city-filter' class="dropdown-menu" aria-labelledby="child-care">
                             </div>
                         </div>
                         <div class="dropdown">
@@ -158,6 +156,18 @@
                             <div id='day-filter' class="dropdown-menu" aria-labelledby="child-care">
                             </div>
                         </div>
+                        <div class="dropdown">
+                            <button class="btn btn-link" type="button" id="child-care" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              All Childcare
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="child-care">
+                                <a class="dropdown-item" id='no-childcare'>No Childcare Needed</a>
+                                <a class="dropdown-item" id='yes-childcare'>Childcare Needed</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-link" type="button" id="clear-filters">
+                          Clear Filters
+                        </button>
                         <table class="table">
                             <tbody class="list">
                                 <tr>

@@ -402,12 +402,12 @@ $(document).ready(function() {
 
     var localStorage = window.localStorage;
 
-    var days = groups.map(function(group) {
-      return group.dayofweek;
-    }).filter(uniqueArray);
-
     function uniqueArray(value, index, self) {
       return self.indexOf(value) === index
+    }
+
+    function formatCityString(str) {
+      return str.replace(/\s+/g, '-').toLowerCase();
     }
 
     function addDayFilterListeners() {
@@ -418,15 +418,43 @@ $(document).ready(function() {
       });
     }
 
-    var citys = groups.map(function(group) {
-      return group.location
-    }).filter(uniqueArray);
-
     days.forEach(function(day) {
       $('#day-filter').append(`<a class="dropdown-item" id="day-${day}-filter">${day}</a>`);
     });
 
     addDayFilterListeners();
+
+    function filteredGenders() {
+      var found = []
+      groups.map(function(group) {
+        if(group.gender === localStorage.gender) {
+          found.push(group);
+        }
+      })
+      return found;
+    }
+
+    function createFilteredCitys() {
+      var filterGenersArray = filteredGenders(groups)
+      var citys = filterGenersArray.map(function(group) {
+        return group.location
+      }).filter(uniqueArray);
+
+      citys.forEach(function(city) {
+        var formattedCity = formatCityString(city);
+        $('#city-filter').append(`<a class="dropdown-item" id="${formattedCity}-filter">${city}</a>`)
+      });
+      addCityFilters(citys)
+    }
+
+    function addCityFilters(citys) {
+      citys.forEach(function(city) {
+        var formattedCity = formatCityString(city);
+        $(`#${formattedCity}-filter`).click("click", function() {
+          cityFilter(formattedCity);
+        });
+      });
+    }
 
     var options = {
       valueNames: [
@@ -452,6 +480,17 @@ $(document).ready(function() {
       })
     }
 
+    function cityFilter(city) {
+      groupsList.filter(function(group) {
+        var values = group.values();
+        if(formatCityString(values.location) === city && values.gender === localStorage.gender) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+    }
+
     function genderFilter() {
       groupsList.filter(function(group) {
         if(group.values().gender === localStorage.gender) {
@@ -472,6 +511,11 @@ $(document).ready(function() {
         }
       })
     }
+
+    function clearFilters() {
+      groupsList.filter();
+    }
+    $('#clear-filters').click("click", clearFilters);
 
     $('#no-childcare').click("click", function() {
       childcareFilter('No');
@@ -495,8 +539,14 @@ $(document).ready(function() {
       $('#map').empty();
     }
 
+    function emptyCityFilters() {
+      $('#city-filter').empty();
+    }
+
     function womenSelector() {
       localStorage.setItem('gender', 'female');
+      emptyCityFilters()
+      createFilteredCitys();
       genderFilter();
       emptyMap();
       $('<iframe src=" https://www.google.com/maps/d/u/0/embed?mid=1sBsy1oCa4Hk-6XnS7bRpVju5qfcybEXI"></iframe>')
@@ -505,6 +555,8 @@ $(document).ready(function() {
 
     function menSelector() {
       localStorage.setItem('gender', 'male');
+      emptyCityFilters()
+      createFilteredCitys();
       genderFilter();
       emptyMap();
       $('<iframe src=" https://www.google.com/maps/d/u/0/embed?mid=1LAWWyZCiU7v8otNHZt_U6Us6RC7ApkWJ"></iframe>')
@@ -513,4 +565,5 @@ $(document).ready(function() {
 
     localStorage.setItem('gender', 'male');
     genderFilter();
+    createFilteredCitys();
 });
