@@ -30,17 +30,33 @@ body {
     font-size: 25px;
 }
 
+.hide {
+    display: none;
+}
 
-/*.home-wrapper img {
-    max-width: 350px;
-}*/
+.home-wrapper {
+    padding: 0px;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.womans-button-wrapper, .mens-button-wrapper.group-buttons button {
+    padding: 9px 25px;
+}
+
+.title-content-wrapper {
+    margin-top: 10%;
+}
 
 .top-title .element {
     margin: 50px 0px;
 }
 
 .top-title .image-element {
-    margin: 100px 0px;
+    margin: 120px 0px;
 }
 
 .group-buttons button {
@@ -55,6 +71,7 @@ body {
 .image-element img {
     display: block;
     margin: 0 auto;
+    max-width: 300px;
 }
 
 .group-buttons button {
@@ -95,12 +112,35 @@ body {
 }
 
 .group-description p {
-    font-size: 14px;
-    line-height: 2;
+    font-size: 15px;
+    line-height: 2.4;
+    width: 81%;
 }
 
 .middle-image-wrapper img {
     width: 100%;
+}
+
+.table {
+    margin-top: 125px;
+}
+
+.sign-up-today p {
+    padding: 0px 170px;
+    line-height: 2.5;
+}
+
+.sign-up-today h3 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.sign-up-container {
+    margin-top: 100px;
+}
+
+.group-content-wrapper {
+    margin-bottom: 100px;
 }
 
 .map {
@@ -116,3 +156,52 @@ body {
 /* Group Table */
 
 .signup-btn {}
+
+
+/* media quiries */
+
+@media only screen and (max-width:1680px) {
+    .woman-group-side, .womans-button {
+        padding-right: 50px;
+    }
+    .mens-group-side, .mens-button {
+        padding-left: 50px;
+    }
+    .group-buttons .womans-button-wrapper {
+        padding-right: 50px;
+    }
+    .group-buttons .mens-button-wrapper {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .title-content-wrapper {
+        margin-top: 8%;
+    }
+    .woman-group-side, .mens-group-side span {
+        font-size: 22px;
+    }
+    .image-element img {
+        max-width: 280px;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .title-content-wrapper {
+        margin-top: 6%;
+    }
+    .top-title .image-element {
+        margin: 110px 0px
+    }
+    .image-element img {
+        max-width: 260px;
+    }
+    /*.group-buttons button {
+        padding: 8px 28px;
+    }
+    .top-title .element {
+        margin: 50px 0px;
+        margin-bottom: 0px;
+    }*/
+}

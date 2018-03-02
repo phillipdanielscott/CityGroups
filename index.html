@@ -50,11 +50,11 @@
                         </div>
                     </div>
                     <div class="row group-buttons">
-                        <div class="col">
-                            <button type="button" class="btn btn-secondary" id='women-selector'>WOMAN</button>
+                        <div class="col womans-button-wrapper">
+                            <button type="button" class="btn btn-secondary womans-button" id='women-selector'>WOMAN</button>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-secondary" id='men-selector'>MEN</button>
+                        <div class="col mens-button-wrapper">
+                            <button type="button" class="btn btn-secondary mens-button" id='men-selector'>MEN</button>
                         </div>
                     </div>
                 </div>
@@ -62,6 +62,7 @@
                 <div class="row">
                     <div class="col text-center city-group-gender-title">
                         <span>JC SACRAMENTO WOMEN’S CITY GROUP</span>
+                        <span class="hide">JC SACRAMENTO MEN’S CITY GROUP</span>
                     </div>
                 </div>
 
@@ -69,18 +70,26 @@
                     <div class="row">
                         <div class="col text-center authentic-text">
                             <h6>Authentic</h6>
+                            <h6 class="mens-content hide">Alive</h6>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col text-center you-are-enough-text">
                             <span>YOU ARE ENOUGH. YOU ARE VALUABLE. YOUR STORY IS MEANT TO BE HEARD.</span>
+                            <span class="hide mens-content">YOU WERE CREATED TO LIVE A LIFE WHICH IS FULLY ALIVE, IN EVERY ASPECT.</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col middle-image-wrapper">
                             <img src="/assets/img/city-bg.jpg" alt="">
                         </div>
-                        <div class="col group-description">
+                        <div class="col group-description womans-dialog">
+                            <p>As we gather together with the women of JC Sacramento, our heart is to remind one another that no matter what your story is, it is powerful.</p>
+                            <p>By sharing and listening to each other’s stories, having real conversations, and connecting over the course of 5 weeks, our hope is that we would overcome fear, rejection, comparison and disappointment. Together we will instill
+                                a sense of sisterhood, growth, and grace for the process. </p>
+                            <p>We are gathering to remind one another that we are not alone, we are not stuck, and there is hope and freedom for everyone, in every situation.</p>
+                        </div>
+                        <div class="col group-description mens-content hide">
                             <p>As we gather together with the women of JC Sacramento, our heart is to remind one another that no matter what your story is, it is powerful.</p>
                             <p>By sharing and listening to each other’s stories, having real conversations, and connecting over the course of 5 weeks, our hope is that we would overcome fear, rejection, comparison and disappointment. Together we will instill
                                 a sense of sisterhood, growth, and grace for the process. </p>
@@ -88,18 +97,40 @@
                         </div>
                     </div>
                 </div>
+                <div class="container sign-up-container">
+                    <div class="row">
+                        <div class="col sign-up-today">
+                            <div class="col-12 text-center">
+                                <h3>Sign Up Today</h3>
+                                <p>Search for a group below then click the sign up button for the group you are interested in. You’ll be redirected to a form where you can enter your information. Once you submit the form, you’ll receive a confirmation message
+                                    letting you know you’ve been added. The host home will reach out to you as the group meeting gets closer with any additional information you need. If you happen to select a group that is already full, you’ll be taken
+                                    to a page that says “the form is no longer active”. Please reach out to church@jesusculture.com with any questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <table class="table">
-                <tbody id='group-table'></tbody>
-            </table>
-        </div>
-        <div class="section">
-            <div id="map" class="map"></div>
-        </div>
 
+            <div class="container">
+                <div class="row group-content-wrapper">
+                    <table class="table">
+                        <tbody id='group-table'></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section col">
+                        <div id="map" class="map"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
     </body>
 
 </html>
