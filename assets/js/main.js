@@ -1,3 +1,4 @@
+// Static List of all the groups
 var groups = [
  {
    "name": "Paul Di Giordano & Nate Wolde",
@@ -388,6 +389,7 @@ var groups = [
  }
 ];
 
+// Static list of the days of the week
 var days = [
   'Sunday',
   'Monday',
@@ -400,16 +402,29 @@ var days = [
 
 $(document).ready(function() {
 
+// Utility Functions
+
+    // Initializes Localstorage
     var localStorage = window.localStorage;
 
+    // Sorts out the Unique values for the citys filters
     function uniqueArray(value, index, self) {
       return self.indexOf(value.trim()) === index
     }
 
+    // Formats the ids placed on the filter buttons
     function formatCityString(str) {
       return str.replace(/\s+/g, '-').toLowerCase();
     }
 
+// Day Filter Functions
+
+    // Creates the elements with the correct id to filter
+    days.forEach(function(day) {
+      $('#day-filter').append(`<a class="dropdown-item" id="day-${day}-filter">${day}</a>`);
+    });
+
+    // Adds the listeners to all the day filter links
     function addDayFilterListeners() {
       days.forEach(function(day) {
         $(`#day-${day}-filter`).click("click", function() {
@@ -418,14 +433,12 @@ $(document).ready(function() {
       });
     }
 
-    days.forEach(function(day) {
-      $('#day-filter').append(`<a class="dropdown-item" id="day-${day}-filter">${day}</a>`);
-    });
-
-    addDayFilterListeners();
+    // Adds a listener to the static any day link
     $('#anyday-filter').click('click', function() {
       dayFilter('any');
     });
+
+// Gender Filter Functions
 
     function filteredGenders() {
       var found = []
@@ -437,16 +450,26 @@ $(document).ready(function() {
       return found;
     }
 
+// City Filter Functions
+
     function createFilteredCitys() {
-      var filterGenersArray = filteredGenders(groups)
-      var citys = filterGenersArray.map(function(group) {
+      // Grabs the list of groups based on gender storaged in localStorage
+      var filterGendersArray = filteredGenders(groups)
+      // Retuns a "Unique Array" of the filterGenersArray. In lamans terms it
+      // removes all the duplicate cities for the filter buttons
+      var citys = filterGendersArray.map(function(group) {
         return group.location
       }).filter(uniqueArray);
 
+      // Takes the unique array "citys" and creates the filter buttons links
+      // with their according id
       citys.forEach(function(city) {
+        // Replaces spaces with "-"
         var formattedCity = formatCityString(city);
+
         $('#city-filter').append(`<a class="dropdown-item" id="${formattedCity}-filter">${city}</a>`)
       });
+      // Initializes the onclick listeners for all the links
       addCityFilters(citys)
     }
 
@@ -459,6 +482,9 @@ $(document).ready(function() {
       });
     }
 
+// List.js Functions and Initializers
+
+    // Initializing
     var options = {
       valueNames: [
         "name",
@@ -470,14 +496,19 @@ $(document).ready(function() {
       ]
     };
 
-    var groupsList = new List('groups-list', options, groups)
+    var groupsList = new List('groups-list', options, groups);
+
+    // Functions
 
     function dayFilter(day) {
       groupsList.filter(function(group) {
         var values = group.values();
+        // If any day is selected it just returns all within the gender selected
         if(day === 'any' && values.gender === localStorage.gender) {
           return true
         }
+        // As you will see the ""&& values.gender === localStorage.gender" which
+        // keeps things the list gender filtered along with the new filter.
         if(values.dayofweek === day && values.gender === localStorage.gender) {
           return true;
         } else {
@@ -518,12 +549,13 @@ $(document).ready(function() {
       })
     }
 
+    // Clears all filters and defaults to whatever is the gender stored in local storage
     function clearFilters() {
       genderFilter();
     }
 
+    // Adding listeners for filters
     $('#clear-filters').click("click", clearFilters);
-
     $('#no-childcare').click("click", function() {
       childcareFilter('No');
     });
@@ -531,7 +563,7 @@ $(document).ready(function() {
       childcareFilter('Yes');
     });
 
-    // Google Map
+// Google Map
 
     // Initializes map and defaults to the men groups url
     $('<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LAWWyZCiU7v8otNHZt_U6Us6RC7ApkWJ" width="640" height="480"></iframe>')
@@ -570,7 +602,9 @@ $(document).ready(function() {
        .appendTo('#map');
     }
 
+    // Initializes Everything
     localStorage.setItem('gender', 'male');
+    addDayFilterListeners();
     genderFilter();
     createFilteredCitys();
 
