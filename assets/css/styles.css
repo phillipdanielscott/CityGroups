@@ -152,12 +152,6 @@ body {
     height: 480px;
 }
 
-
-/* Group Table */
-
-.signup-btn {}
-
-
 /* media quiries */
 
 @media only screen and (max-width:1680px) {
@@ -277,4 +271,34 @@ body {
         background-color: white;
         color: black;
     }
+    
+.signuplink {
+  color: #292b2c;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #212529;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.signup-btn:hover{
+  color: inherit;
+}
+
+/*  Filters dropdowns */
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
 }

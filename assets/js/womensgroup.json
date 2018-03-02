@@ -1,19 +1,11 @@
 [
  {
-   "name": "Name",
-   "location": "Location ",
-   "dayofweek": "Day of the Week",
-   "time": "Time",
-   "kids": "Kids allowed?",
-   "signuplink": "Links",
- },
- {
    "name": "Jessica Gilstrap",
    "location": "Folsom",
    "dayofweek": "Wednesday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/200/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/200/responses/new"
  },
  {
    "name": "Jessica Volpendesta and Kristina Owen",
@@ -21,7 +13,7 @@
    "dayofweek": "Wednesday",
    "time": "6:30 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/201/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/201/responses/new"
  },
  {
    "name": "Heather Kreiser and Kim Kemper",
@@ -29,7 +21,7 @@
    "dayofweek": "Tuesday",
    "time": "7:00 PM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/202/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/202/responses/new"
  },
  {
    "name": "Brenda Miller and Juanita Miller",
@@ -37,7 +29,7 @@
    "dayofweek": "Wednesday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/203/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/203/responses/new"
  },
  {
    "name": "Geta Murar",
@@ -45,7 +37,7 @@
    "dayofweek": "Thursday",
    "time": "6:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/204/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/204/responses/new"
  },
  {
    "name": "Andrea Smith",
@@ -53,7 +45,7 @@
    "dayofweek": "Wednesday",
    "time": "6:30 PM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/205/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/205/responses/new"
  },
  {
    "name": "Susan Woodcock and Sharon Monasmith",
@@ -61,7 +53,7 @@
    "dayofweek": "Tuesday",
    "time": "6:30 PM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/206/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/206/responses/new"
  },
  {
    "name": "Lynne Randolph",
@@ -69,7 +61,7 @@
    "dayofweek": "Wednesday",
    "time": "6:30 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/207/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/207/responses/new"
  },
  {
    "name": "Judy Trent-Whitnack",
@@ -77,7 +69,7 @@
    "dayofweek": "Friday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/208/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/208/responses/new"
  },
  {
    "name": "Irina Melnik",
@@ -85,7 +77,7 @@
    "dayofweek": "Wednesday",
    "time": "7:00 PM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/209/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/209/responses/new"
  },
  {
    "name": "Lyndsee Sisemore and Stephanie Young",
@@ -93,7 +85,7 @@
    "dayofweek": "Thursday",
    "time": "6:30 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/210/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/210/responses/new"
  },
  {
    "name": "Rachel Taylor and Payton Carty ",
@@ -101,7 +93,7 @@
    "dayofweek": "Monday",
    "time": "6:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/211/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/211/responses/new"
  },
  {
    "name": "Tiina Fitzgerald and Sheri Struthers",
@@ -109,7 +101,7 @@
    "dayofweek": "Tuesday",
    "time": "10:00 AM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/212/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/212/responses/new"
  },
  {
    "name": "Sandy Perez",
@@ -117,7 +109,7 @@
    "dayofweek": "Tuesday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/213/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/213/responses/new"
  },
  {
    "name": "Sonja Weller",
@@ -125,7 +117,7 @@
    "dayofweek": "Tuesday",
    "time": "6:30 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/214/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/214/responses/new"
  },
  {
    "name": "Pam Jackson (Starting a week late)",
@@ -133,7 +125,7 @@
    "dayofweek": "Tuesday",
    "time": "10:00 AM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/215/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/215/responses/new"
  },
  {
    "name": "Kelly Kynaston and Sandy Perez",
@@ -141,7 +133,7 @@
    "dayofweek": "Wednesday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/216/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/216/responses/new"
  },
  {
    "name": "Andrea Butson & Trish Minor",
@@ -149,7 +141,7 @@
    "dayofweek": "Monday",
    "time": "7:00 PM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/217/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/217/responses/new"
  },
  {
    "name": "LeeAnn Danielson",
@@ -157,7 +149,7 @@
    "dayofweek": "Thursday",
    "time": "10:30 AM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/218/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/218/responses/new"
  },
  {
    "name": "Christy Well",
@@ -165,7 +157,7 @@
    "dayofweek": "Thursday",
    "time": "7:00 AM",
    "kids": "No",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/219/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/219/responses/new"
  },
  {
    "name": "Francine Hardy",
@@ -173,7 +165,7 @@
    "dayofweek": "Friday",
    "time": "6:00 AM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/220/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/220/responses/new"
  },
  {
    "name": "Marialice Garrett",
@@ -181,7 +173,7 @@
    "dayofweek": "Thursday",
    "time": "7:00 PM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/222/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/222/responses/new"
  },
  {
    "name": "Ava Elkow",
@@ -189,7 +181,7 @@
    "dayofweek": "Tueday",
    "time": "6:30 PM",
    "kids": "No ",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/241/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/241/responses/new"
  },
  {
    "name": "Amanda Head",
@@ -197,6 +189,6 @@
    "dayofweek": "Wednesday",
    "time": "9:30 AM",
    "kids": "Yes",
-   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/242/responses/new",
+   "signuplink": "https://jcsacramento.ccbchurch.com/goto/forms/242/responses/new"
  }
 ]
