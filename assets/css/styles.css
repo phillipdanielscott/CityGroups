@@ -257,4 +257,24 @@ body {
         background-size: contain;
         height: 1800px;
     }
+    .title-content-wrapper, .group-buttons {
+        display: none;
+    }
+    .mobile-title-content-wrapper .hide {
+        display: unset;
+    }
+    .mobile-title-content-wrapper .top-title span {
+        color: white;
+    }
+    .image-element img {
+        max-width: 240px;
+    }
+    .top-title .image-element {
+        margin: 15px 0px;
+    }
+    .woman-group-side, .womans-button {
+        padding-right: 12px;
+        background-color: white;
+        color: black;
+    }
 }
