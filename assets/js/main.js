@@ -403,7 +403,7 @@ $(document).ready(function() {
     var localStorage = window.localStorage;
 
     function uniqueArray(value, index, self) {
-      return self.indexOf(value) === index
+      return self.indexOf(value.trim()) === index
     }
 
     function formatCityString(str) {
@@ -513,7 +513,7 @@ $(document).ready(function() {
     }
 
     function clearFilters() {
-      groupsList.filter();
+      genderFilter();
     }
     $('#clear-filters').click("click", clearFilters);
 
