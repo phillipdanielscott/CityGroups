@@ -205,3 +205,56 @@ body {
         margin-bottom: 0px;
     }*/
 }
+
+@media only screen and (max-width:1280px) {
+    .top-title .image-element {
+        margin: 102px 0px;
+    }
+    .group-buttons button {
+        padding: 8px 27px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .title-content-wrapper {}
+    .woman-group-side, .mens-group-side span {
+        font-size: 16px;
+    }
+    .image-element img {
+        max-width: 225px;
+    }
+    .top-title .image-element {
+        margin: 56px 0px;
+    }
+    .group-buttons button {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .image-element img {
+        max-width: 170px;
+    }
+    .top-title .image-element {
+        margin: 36px 0px;
+    }
+    .woman-group-side, .mens-group-side span {
+        font-size: 14px;
+    }
+    .group-buttons button {
+        padding: 6px 18px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .hero-image-container {
+        background: url(/assets/img/mobile-bg.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: contain;
+        height: 1800px;
+    }
+}
