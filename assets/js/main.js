@@ -593,6 +593,7 @@ $(document).ready(function() {
         createFilteredCitys();
         genderFilter();
         emptyMap();
+        styleSignupLink();
         $('#mens-city-intro').addClass("hide");
         $('#womens-city-intro').removeClass("hide");
         $('#mobile-womens-city-intro').removeClass("hide");
@@ -621,6 +622,7 @@ $(document).ready(function() {
         createFilteredCitys();
         genderFilter();
         emptyMap();
+        styleSignupLink();
         $('#womens-city-intro').addClass("hide");
         $('#mens-city-intro').removeClass("hide");
         $('#mobile-womens-city-intro').addClass("hide");
@@ -641,31 +643,33 @@ $(document).ready(function() {
             .appendTo('#map');
     }
 
+    function styleSignupLink() {
+      $('.signuplink').css({
+          "color": "#292b2c",
+          "text-decoration": "none",
+          "display": "inline-block",
+          "padding": "6px 12px",
+          "margin-bottom": "0",
+          "font-size": "14px",
+          "font-weight": "normal",
+          "line-height": "1.428571429",
+          "text-align": "center",
+          "white-space": "nowrap",
+          "vertical-align": "middle",
+          "cursor": "pointer",
+          "border": "1px solid #212529",
+          "-webkit-user-select": "none",
+          "-moz-user-select": "none",
+          "-ms-user-select": "none",
+          "-o-user-select": "none",
+          "user-select": "none"
+      });
+    }
+
     // Initializes Everything
     localStorage.setItem('gender', 'male');
     addDayFilterListeners();
     genderFilter();
     createFilteredCitys();
-
-    $('.signuplink').css({
-        "color": "#292b2c",
-        "text-decoration": "none",
-        "display": "inline-block",
-        "padding": "6px 12px",
-        "margin-bottom": "0",
-        "font-size": "14px",
-        "font-weight": "normal",
-        "line-height": "1.428571429",
-        "text-align": "center",
-        "white-space": "nowrap",
-        "vertical-align": "middle",
-        "cursor": "pointer",
-        "border": "1px solid #212529",
-        "-webkit-user-select": "none",
-        "-moz-user-select": "none",
-        "-ms-user-select": "none",
-        "-o-user-select": "none",
-        "user-select": "none"
-    });
-
+    styleSignupLink();
 });
