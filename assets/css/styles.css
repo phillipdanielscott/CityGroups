@@ -70,11 +70,19 @@ button {
 }
 
 .filter-wrapper {
- display: inline-flex;
- margin: 0 auto;
- width: 60%;
- display: flex;
- justify-content: center;
+ display: block;
+ text-align: center; -webkit-center;
+ margin-bottom: 25px;
+}
+
+.filter-wrapper .dropdown {
+  display: inline-block;
+}
+
+@media only screen and (max-width:800px) {
+ .filter-wrapper .dropdown {
+  display: block;
+ }
 }
 
 .filter-wrapper .dropdown .btn .btn-link {
@@ -549,6 +557,79 @@ margin-bottom: 0px;
  }
 }
 
+/*  Table */
+
+.group-table {
+  width: 100%;
+  border-top: 2px solid #bebecb;
+}
+
+.group-table td {
+  text-align: left;
+  padding: 20px 10px;
+}
+
+.groups-list-tr {
+  border-bottom: 2px solid #bebecb;
+}
+
+.table-name {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 5px 20px 10px !important;
+}
+
+.table-kids span {
+  font-size: 13px;
+}
+
+.td-spacing {
+  padding: 20px 10px 20px 5px !important;
+}
+
+@media only screen and (max-width:800px) {
+  .table-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 3px !important;
+  }
+  .group-table td {
+    display: block;
+    text-align: center;
+    padding: 3px;
+  }
+  .groups-list {
+    border: 0px;
+  }
+  .groups-list-tr {
+    border: 0px;
+    padding-bottom: 25px;
+  }
+  .td-spacing {
+    padding-bottom: 25px !important;
+  }
+  .signuplink {
+   color: #292b2c;
+   border: 0px !important;
+   background-color: #b8b7b7;
+   width: 100%;
+   text-decoration: none;
+   padding: 6px 12px;
+   margin-bottom: 0;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 1.428571429;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+  }
+}
 
 /*  Filters dropdowns */
 
@@ -556,14 +637,6 @@ margin-bottom: 0px;
  display: block;
 }
 
-border: 1px solid #212529;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
--o-user-select: none;
-user-select: none;
-
-}
 .signup-btn:hover {
  color: inherit;
 }
