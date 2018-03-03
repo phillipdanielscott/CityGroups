@@ -400,10 +400,29 @@ var days = [
 ]
 
 $(document).ready(function() {
-    $('#women-selector').click(function() {
-        //optionally remove the 500 (which is time in milliseconds) of the
-        //scrolling animation to remove the animation and make it instant
-        $.scrollTo($('.center-section'), 500);
+    $("#women-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".center-section").offset().top
+            },
+            'slow');
+    });
+    $("#men-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".center-section").offset().top
+            },
+            'slow');
+    });
+    $("#mobile-women-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".texture-bg-wrapper").offset().top
+            },
+            'slow');
+    });
+    $("#mobile-men-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".texture-bg-wrapper").offset().top
+            },
+            'slow');
     });
     // Utility Functions
 
