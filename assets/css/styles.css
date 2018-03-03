@@ -191,7 +191,7 @@ a {
 }
 
 .group-description p {
- font-size: 15px;
+ font-size: 17px;
  line-height: 2.1;
  width: 100%;
  padding: 0px;
@@ -209,6 +209,7 @@ a {
 .sign-up-today p {
  padding: 0px 170px;
  line-height: 2.1;
+ font-size: 17px;
 }
 
 .sign-up-today h3 {
@@ -591,6 +592,10 @@ margin-bottom: 0px;
  .group-description p {
   padding-left: 0px;
   text-align: center;
+  font-size: 16px;
+ }
+ .sign-up-today p {
+  font-size: 16px;
  }
  .group-description {
   padding-right: 60px;
@@ -623,6 +628,12 @@ margin-bottom: 0px;
  }
  .map iframe {
   height: 430px;
+ }
+ .videoWrapper iframe {
+  padding: 0px 20px;
+ }
+ .city-group-gender-title span {
+  font-size: 17px;
  }
 }
 
@@ -708,7 +719,7 @@ margin-bottom: 0px;
   font-size: 16px;
  }
  .authentic-text h6 {
-  font-size: 50px;
+  font-size: 45px;
  }
  .you-are-enough-text span {
   font-size: 16px;
@@ -754,7 +765,7 @@ margin-bottom: 0px;
   padding-left: 30px;
  }
  .authentic-text h6 {
-  font-size: 45px;
+  font-size: 40px;
  }
  td-spacing {
   padding: 0 !important;
