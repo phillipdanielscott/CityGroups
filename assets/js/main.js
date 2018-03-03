@@ -400,30 +400,7 @@ var days = [
 ]
 
 $(document).ready(function() {
-    $("#women-selector").click(function() {
-        $('html,body').animate({
-                scrollTop: $(".center-section").offset().top
-            },
-            'slow');
-    });
-    $("#men-selector").click(function() {
-        $('html,body').animate({
-                scrollTop: $(".center-section").offset().top
-            },
-            'slow');
-    });
-    $("#mobile-women-selector").click(function() {
-        $('html,body').animate({
-                scrollTop: $(".texture-bg-wrapper").offset().top
-            },
-            'slow');
-    });
-    $("#mobile-men-selector").click(function() {
-        $('html,body').animate({
-                scrollTop: $(".texture-bg-wrapper").offset().top
-            },
-            'slow');
-    });
+
     // Utility Functions
 
     // Initializes Localstorage
@@ -610,6 +587,34 @@ $(document).ready(function() {
         $('#city-filter').empty();
     }
 
+
+    //click and scroll events
+    $("#women-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".center-section").offset().top
+
+            },
+            'slow');
+    });
+    $("#men-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".center-section").offset().top
+            },
+            'slow');
+    });
+    $("#mobile-women-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".texture-bg-wrapper").offset().top
+            },
+            'slow');
+    });
+    $("#mobile-men-selector").click(function() {
+        $('html,body').animate({
+                scrollTop: $(".texture-bg-wrapper").offset().top
+            },
+            'slow');
+    });
+
     function womenSelector() {
         localStorage.setItem('gender', 'female');
         emptyCityFilters()
@@ -618,7 +623,7 @@ $(document).ready(function() {
         emptyMap();
         styleSignupLink();
         $('#mens-city-intro').addClass("hide");
-        $('#womens-city-intro').removeClass("hide");
+        $('#womens-city-intro').removeClass("hide").fadeIn();
         $('#mobile-womens-city-intro').removeClass("hide");
         $('#mobile-mens-city-intro').addClass("hide");
         $('#mens-content').addClass("hide");
