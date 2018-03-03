@@ -161,76 +161,71 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row group-content-wrapper">
-                    <div class="col">
+            <div class="container-fluid">
+                <div class="group-content-wrapper">
+                    <div class="col-md-12">
                         <div id="groups-list">
                             <span class="narrow-down">NARROW DOWN YOUR RESULTS</span>
-                            <div class="filter-wrapper col-12">
-
-
+                            <div class="filter-wrapper">
                                 <div class="dropdown">
                                     <button class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Select City
-                          </button>
-
-                                    <div id='city-filter' class="dropdown-menu" aria-labelledby="child-care">
-                                    </div>
+                                        Select City
+                                    </button>
+                                    <div id='city-filter' class="dropdown-menu" aria-labelledby="child-care"></div>
                                 </div>
                                 <div class="dropdown">
                                     <button class="btn btn-link" type="button" id="child-care" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Day
-                          </button>
+                                        Select Day
+                                    </button>
                                     <div id='day-filter' class="dropdown-menu" aria-labelledby="child-care">
                                         <a class="dropdown-item" id="anyday-filter">Any Day</a>
                                     </div>
                                 </div>
                                 <div class="dropdown">
                                     <button class="btn btn-link" type="button" id="child-care" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              All Childcare
-                            </button>
+                                        All Childcare
+                                    </button>
                                     <div class="dropdown-menu" aria-labelledby="child-care">
                                         <a class="dropdown-item" id='no-childcare'>No Childcare Needed</a>
                                         <a class="dropdown-item" id='yes-childcare'>Childcare Needed</a>
                                     </div>
                                 </div>
-                                <button class="btn btn-link" type="button" id="clear-filters">
-                          Clear Filters
-                        </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-link" type="button" id="clear-filters">
+                                        Clear Filters
+                                    </button>
+                                </div>
                             </div>
-                            <div class="table-responsive">
-
-                                <table class="table-responsive">
-                                    <tbody class="list">
-                                        <tr>
-                                            <td class="name"></td>
-                                            <td class="location"></td>
-                                            <td>
-                                                <span class="dayofweek"></span>
-                                                <span class="time"></span>
-                                            </td>
-                                            <td class="kids"></td>
-                                            <td>
-                                                <button type="button" name="button"><a class="signuplink" target="blank">Sign Up</a></button>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                            <div class="groups-list">
+                                <table class="group-table col-md-8 offset-md-2">
+                                  <tbody class="list">
+                                    <tr class="groups-list-tr">
+                                      <td class="name table-name"></td>
+                                      <td class="location"></td>
+                                      <td>
+                                          <span class="dayofweek"></span>
+                                          <span class="time"></span>
+                                      </td>
+                                      <td class="table-kids">
+                                          <span class="kids"></span><span> childcare provided.</span>
+                                      </td>
+                                      <td class="td-spacing">
+                                          <a class="signuplink" target="blank">Sign Up</a>
+                                      </td>
+                                    </tr>
+                                </tbody>
                                 </table>
+                                <!-- <ul class="list groups-list-ul">
+                                    <li class="groups-list-li">
+                                        <span class="name groups-list-span"></span>
+                                        <span class="location groups-list-span"></span>
+                                        <span class="dayofweek groups-list-span"></span>
+                                        <span class="time groups-list-span"></span>
+                                        <span class="kids groups-list-span"></span><span>childcare provided</span>
+                                        <a class="signuplink" target="blank">Sign Up</a>
+                                    </li>
+                                </ul> -->
                             </div>
-
-                            <!-- <ul class="list">
-                            <li>
-                                <span class="name"></span>
-                                <span class="location"></span>
-                                <span class="dayofweek"></span>
-                                <span class="time"></span>
-                                <span class="kids"></span>
-                                <a class="signuplink" target="blank">Sign Up</a>
-                            </li>
-                        </ul> -->
-                        </div>
-
                     </div>
                 </div>
 
