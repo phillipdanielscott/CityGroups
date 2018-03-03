@@ -13,6 +13,10 @@ button {
  text-align: center;
 }
 
+.mobile-video {
+ display: none;
+}
+
 .row {
  margin-left: 0px;
  margin-right: 0px;
@@ -71,12 +75,13 @@ button {
 
 .filter-wrapper {
  display: block;
- text-align: center; -webkit-center;
+ text-align: center;
+ -webkit-center;
  margin-bottom: 25px;
 }
 
 .filter-wrapper .dropdown {
-  display: inline-block;
+ display: inline-block;
 }
 
 @media only screen and (max-width:800px) {
@@ -246,6 +251,8 @@ a {
  left: 0;
  width: 100%;
  height: 100%;
+ padding-left: 20px;
+ padding-right: 20px;
 }
 
 
@@ -449,6 +456,13 @@ margin-bottom: 0px;
   background-size: contain;
   height: 1800px;
  }
+ .texture-bg-wrapper {
+  background: url(/assets/img/BG-TEXTURE-MOBILE.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
  .title-content-wrapper, .group-buttons {
   display: none;
  }
@@ -459,10 +473,7 @@ margin-bottom: 0px;
   color: white;
  }
  .image-element img {
-  max-width: 240px;
- }
- .top-title .image-element {
-  margin: 15px 0px;
+  max-width: 225px;
  }
  .woman-group-side, .womans-button {
   padding-right: 12px;
@@ -493,16 +504,78 @@ margin-bottom: 0px;
   color: inherit;
  }
  .mens-section {
-  margin-top: 150px;
+  margin-top: 207px;
+  margin-bottom: 58px;
  }
  .top-title .element {
   margin: 10px 0px;
  }
  .top-title .image-element {
-  margin: 55px 0px;
+  margin: 38px 0px;
  }
  .mens-section .mens-logo {
-  margin: 85px 0px;
+  margin-bottom: 75px;
+  margin-top: 44px;
+ }
+ .mens-button-wrapper {
+  padding: 0px;
+ }
+ .womens-section {
+  margin-top: 40px;
+ }
+ .top-container {
+  margin-bottom: 44px;
+ }
+ .texture-bg-wrapper {
+  padding-top: 80px;
+ }
+ .city-group-gender-title {
+  margin-bottom: 0px;
+ }
+ .authentic-text h6 {
+  margin: 40px 0px;
+ }
+ .top-container {
+  margin-bottom: 0px;
+ }
+ .you-are-enough-text span {
+  font-weight: 500;
+  font-size: 20px;
+ }
+ .you-are-enough-text {
+  margin-bottom: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+  line-height: 1.3;
+ }
+ .desktop {
+  display: none;
+ }
+ .mobile-video {
+  display: block;
+ }
+ .group-description p {
+  padding-left: 0px;
+  text-align: center;
+ }
+ .group-description {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 50px;
+ }
+ .sign-up-today p {
+  padding: 0px;
+ }
+ .sign-up-today {
+  padding: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+ }
+ .sign-up-today .col-12 {
+  padding: 0px;
+ }
+ .sign-up-container {
+  padding: 0px;
  }
 }
 
@@ -519,6 +592,13 @@ margin-bottom: 0px;
  .womans-button {
   font-size: 14px;
  }
+ .womens-section {
+  margin-top: 21px;
+ }
+ .mens-section {
+  margin-top: 171px;
+  margin-bottom: 21px;
+ }
 }
 
 @media only screen and (max-width:375px) {
@@ -534,6 +614,13 @@ margin-bottom: 0px;
  .mens-section {
   margin-top: 120px;
  }
+ .top-title .image-element {
+  margin: 29px 0px;
+ }
+ .image-element img {
+  max-width: 180px;
+ }
+ .mens-section {}
 }
 
 @media only screen and (max-width:320px) {
@@ -557,79 +644,81 @@ margin-bottom: 0px;
  }
 }
 
+
 /*  Table */
 
 .group-table {
-  width: 100%;
-  border-top: 2px solid #bebecb;
+ width: 100%;
+ border-top: 2px solid #bebecb;
 }
 
 .group-table td {
-  text-align: left;
-  padding: 20px 10px;
+ text-align: left;
+ padding: 20px 10px;
 }
 
 .groups-list-tr {
-  border-bottom: 2px solid #bebecb;
+ border-bottom: 2px solid #bebecb;
 }
 
 .table-name {
-  font-weight: bold;
-  text-align: center;
-  padding: 20px 5px 20px 10px !important;
+ font-weight: bold;
+ text-align: center;
+ padding: 20px 5px 20px 10px !important;
 }
 
 .table-kids span {
-  font-size: 13px;
+ font-size: 13px;
 }
 
 .td-spacing {
-  padding: 20px 10px 20px 5px !important;
+ padding: 20px 10px 20px 5px !important;
 }
 
 @media only screen and (max-width:800px) {
-  .table-name {
-    font-weight: bold;
-    text-align: center;
-    padding: 3px !important;
-  }
-  .group-table td {
-    display: block;
-    text-align: center;
-    padding: 3px;
-  }
-  .groups-list {
-    border: 0px;
-  }
-  .groups-list-tr {
-    border: 0px;
-    padding-bottom: 25px;
-  }
-  .td-spacing {
-    padding-bottom: 25px !important;
-  }
-  .signuplink {
-   color: #292b2c;
-   border: 0px !important;
-   background-color: #b8b7b7;
-   width: 100%;
-   text-decoration: none;
-   padding: 6px 12px;
-   margin-bottom: 0;
-   font-size: 14px;
-   font-weight: normal;
-   line-height: 1.428571429;
-   text-align: center;
-   white-space: nowrap;
-   vertical-align: middle;
-   cursor: pointer;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   -o-user-select: none;
-   user-select: none;
-  }
+ .table-name {
+  font-weight: bold;
+  text-align: center;
+  padding: 3px !important;
+ }
+ .group-table td {
+  display: block;
+  text-align: center;
+  padding: 3px;
+ }
+ .groups-list {
+  border: 0px;
+ }
+ .groups-list-tr {
+  border: 0px;
+  padding-bottom: 25px;
+ }
+ .td-spacing {
+  padding-bottom: 25px !important;
+ }
+ .signuplink {
+  color: #292b2c;
+  border: 0px !important;
+  background-color: #b8b7b7;
+  width: 100%;
+  text-decoration: none;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+ }
 }
+
 
 /*  Filters dropdowns */
 
@@ -641,7 +730,9 @@ margin-bottom: 0px;
  color: inherit;
 }
 
+
 /*  Filters dropdowns */
+
 .dropdown:hover>.dropdown-menu {
  display: block;
 }

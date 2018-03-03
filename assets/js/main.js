@@ -574,6 +574,9 @@ $(document).ready(function() {
     // Addes click listeners to the buttons when choosing men or womens small group
     $('#women-selector').click("click", womenSelector);
     $('#men-selector').click("click", menSelector);
+    $('#mobile-women-selector').click("click", womenSelector);
+    $('#mobile-men-selector').click("click", menSelector);
+
 
     // Removes the iframe when changing groups
     function emptyMap() {
@@ -596,6 +599,8 @@ $(document).ready(function() {
         $('#womens-content').removeClass("hide");
         $('#authentic-mens-content').addClass("hide");
         $('#authentic-womens-content').removeClass("hide");
+        $('#mens-sub-title').addClass("hide");
+        $('#womens-sub-title').removeClass("hide");
         $('#mens-sub-title').addClass("hide");
         $('#womens-sub-title').removeClass("hide");
         $('<iframe src=" https://www.google.com/maps/d/u/0/embed?mid=1sBsy1oCa4Hk-6XnS7bRpVju5qfcybEXI"></iframe>')
