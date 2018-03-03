@@ -595,14 +595,22 @@ $(document).ready(function() {
         emptyMap();
         $('#mens-city-intro').addClass("hide");
         $('#womens-city-intro').removeClass("hide");
+        $('#mobile-womens-city-intro').removeClass("hide");
+        $('#mobile-mens-city-intro').addClass("hide");
         $('#mens-content').addClass("hide");
         $('#womens-content').removeClass("hide");
+        $('#mobile-mens-content').addClass("hide");
+        $('#mobile-womens-content').removeClass("hide");
         $('#authentic-mens-content').addClass("hide");
         $('#authentic-womens-content').removeClass("hide");
+        $('#mobile-authentic-mens-content').addClass("hide");
+        $('#mobile-authentic-womens-content').removeClass("hide");
         $('#mens-sub-title').addClass("hide");
         $('#womens-sub-title').removeClass("hide");
         $('#mens-sub-title').addClass("hide");
         $('#womens-sub-title').removeClass("hide");
+        $('#mobile-mens-sub-title').addClass("hide");
+        $('#mobile-womens-sub-title').removeClass("hide");
         $('<iframe src=" https://www.google.com/maps/d/u/0/embed?mid=1sBsy1oCa4Hk-6XnS7bRpVju5qfcybEXI"></iframe>')
             .appendTo('#map');
     }
@@ -615,12 +623,20 @@ $(document).ready(function() {
         emptyMap();
         $('#womens-city-intro').addClass("hide");
         $('#mens-city-intro').removeClass("hide");
+        $('#mobile-womens-city-intro').addClass("hide");
+        $('#mobile-mens-city-intro').removeClass("hide");
         $('#womens-content').addClass("hide");
         $('#mens-content').removeClass("hide");
+        $('#mobile-womens-content').addClass("hide");
+        $('#mobile-mens-content').removeClass("hide");
         $('#authentic-womens-content').addClass("hide");
         $('#authentic-mens-content').removeClass("hide");
+        $('#mobile-authentic-womens-content').addClass("hide");
+        $('#mobile-authentic-mens-content').removeClass("hide");
         $('#womens-sub-title').addClass("hide");
         $('#mens-sub-title').removeClass("hide");
+        $('#mobile-womens-sub-title').addClass("hide");
+        $('#mobile-mens-sub-title').removeClass("hide");
         $('<iframe src=" https://www.google.com/maps/d/u/0/embed?mid=1LAWWyZCiU7v8otNHZt_U6Us6RC7ApkWJ"></iframe>')
             .appendTo('#map');
     }
