@@ -13,7 +13,7 @@ button {
  text-align: center;
 }
 
-.mobile-video {
+.videoWrapper .mobile-video iframe {
  display: none;
 }
 
@@ -577,6 +577,19 @@ margin-bottom: 0px;
  .sign-up-container {
   padding: 0px;
  }
+ .group-table {
+  border-top: 0px !important;
+ }
+ td.td-spacing {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+ }
+ .map-section {
+  padding: 0px;
+ }
+ .map iframe {
+  height: 430px;
+ }
 }
 
 @media only screen and (max-width:425px) {
@@ -599,20 +612,42 @@ margin-bottom: 0px;
   margin-top: 171px;
   margin-bottom: 21px;
  }
+ .sign-up-today {
+  padding-left: 40px;
+  padding-right: 40px;
+ }
+ .group-description {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
+ }
+ .authentic-text h6 {
+  margin: 30px 0px;
+ }
+ .you-are-enough-text span {
+  font-size: 18px;
+ }
+ .city-group-gender-title span {
+  font-size: 18px;
+ }
+ .you-are-enough-text span {
+  font-size: 18px;
+ }
+ .authentic-text h6 {
+  font-size: 55px;
+ }
 }
 
 @media only screen and (max-width:375px) {
  .top-title .image-element {
   margin: 29px 0px;
  }
- .mens-section .mens-logo {
-  margin: 50px 0px;
- }
  .womans-button {
   font-size: 12px;
  }
  .mens-section {
-  margin-top: 120px;
+  margin-top: 149px;
+  margin-bottom: 34px;
  }
  .top-title .image-element {
   margin: 29px 0px;
@@ -620,7 +655,38 @@ margin-bottom: 0px;
  .image-element img {
   max-width: 180px;
  }
- .mens-section {}
+ .group-description p {
+  line-height: 2;
+ }
+ .sign-up-today {
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+ .group-description {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
+ }
+ .texture-bg-wrapper {
+  padding-top: 65px;
+ }
+ .city-group-gender-title span {
+  font-size: 16px;
+ }
+ .authentic-text h6 {
+  font-size: 50px;
+ }
+ .you-are-enough-text span {
+  font-size: 16px;
+ }
+ .group-description {
+  padding-right: 30px;
+  padding-left: 30px;
+ }
+ .mens-section .mens-logo {
+  margin: 50px 0px;
+  margin-bottom: 51px;
+ }
 }
 
 @media only screen and (max-width:320px) {
@@ -641,6 +707,37 @@ margin-bottom: 0px;
  }
  .mens-section .mens-logo {
   margin: 44px 0px;
+ }
+ .city-group-gender-title span {
+  font-size: 14px;
+  letter-spacing: 4px;
+ }
+ .you-are-enough-text span {
+  font-size: 14px;
+ }
+ .you-are-enough-text {
+  padding-right: 30px;
+  padding-left: 30px;
+ }
+ .authentic-text h6 {
+  font-size: 45px;
+ }
+ td-spacing {
+  padding: 0 !important;
+ }
+ .sign-up-today p {
+  padding: 0px;
+  line-height: 1.8;
+ }
+ .group-description p {
+  line-height: 1.8;
+ }
+ .sign-up-today h3 {
+  font-size: 31px;
+ }
+ .mens-section .mens-logo {
+  margin: 44px 0px;
+  margin-top: 32px;
  }
 }
 
