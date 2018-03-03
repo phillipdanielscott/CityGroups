@@ -73,6 +73,19 @@
                                     <button type="button" class="btn btn-secondary womans-button" id='women-selector'>I AM A WOMAN</button>
                                 </div>
                             </div>
+                            <div class="row top-title mens-section">
+                                <div class="col-12 element text-center">
+                                    <span>ALIVE</span>
+                                </div>
+                                <div class="col-12 image-element mens-logo">
+                                    <img class="" src="/assets/img/men-community-logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mens-button-wrapper text-center">
+                                    <button type="button" class="btn btn-secondary womans-button" id='men-selector'>I AM A MAN</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -150,14 +163,16 @@
                                     <button class="btn btn-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select City
                           </button>
+
                                     <div id='city-filter' class="dropdown-menu" aria-labelledby="child-care">
                                     </div>
                                 </div>
                                 <div class="dropdown">
                                     <button class="btn btn-link" type="button" id="child-care" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Any Day
+                              Select Day
                           </button>
                                     <div id='day-filter' class="dropdown-menu" aria-labelledby="child-care">
+                                        <a class="dropdown-item" id="anyday-filter">Any Day</a>
                                     </div>
                                 </div>
                                 <div class="dropdown">
@@ -173,23 +188,27 @@
                           Clear Filters
                         </button>
                             </div>
-                            <table class="table">
-                                <tbody class="list">
-                                    <tr>
-                                        <td class="name"></td>
-                                        <td class="location"></td>
-                                        <td>
-                                            <span class="dayofweek"></span>
-                                            <span class="time"></span>
-                                        </td>
-                                        <td class="kids"></td>
-                                        <td>
-                                            <button type="button" name="button"><a class="signuplink" target="blank">Sign Up</a></button>
+                            <div class="table-responsive">
 
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table class="table-responsive">
+                                    <tbody class="list">
+                                        <tr>
+                                            <td class="name"></td>
+                                            <td class="location"></td>
+                                            <td>
+                                                <span class="dayofweek"></span>
+                                                <span class="time"></span>
+                                            </td>
+                                            <td class="kids"></td>
+                                            <td>
+                                                <button type="button" name="button"><a class="signuplink" target="blank">Sign Up</a></button>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                             <!-- <ul class="list">
                             <li>
                                 <span class="name"></span>
@@ -201,6 +220,7 @@
                             </li>
                         </ul> -->
                         </div>
+
                     </div>
                 </div>
 

@@ -4,6 +4,10 @@ body {
  font-family: 'Roboto', sans-serif;
 }
 
+button {
+ border-radius: 0px !important;
+}
+
 .section {
  font-size: 6em;
  text-align: center;
@@ -222,6 +226,9 @@ a {
  .group-buttons .mens-button-wrapper {
   padding-left: 50px;
  }
+ .top-container {
+  margin-bottom: 300px;
+ }
 }
 
 @media only screen and (max-width:1600px) {
@@ -233,6 +240,15 @@ a {
  }
  .image-element img {
   max-width: 280px;
+ }
+ .top-container {
+  margin-bottom: 350px;
+ }
+}
+
+@media only screen and (max-width:1366px) {
+ .top-container {
+  margin-bottom: 300px;
  }
 }
 
@@ -280,6 +296,12 @@ margin-bottom: 0px;
  .group-buttons button {
   padding: 6px 20px;
   font-size: 14px;
+ }
+}
+
+@media only screen and (max-width:960px) {
+ .top-container {
+  margin-bottom: 273px;
  }
 }
 
@@ -350,6 +372,69 @@ margin-bottom: 0px;
  }
  .signup-btn:hover {
   color: inherit;
+ }
+ .mens-section {
+  margin-top: 150px;
+ }
+ .top-title .element {
+  margin: 10px 0px;
+ }
+ .top-title .image-element {
+  margin: 55px 0px;
+ }
+ .mens-section .mens-logo {
+  margin: 85px 0px;
+ }
+}
+
+@media only screen and (max-width:425px) {
+ .image-element img {
+  max-width: 200px;
+ }
+ .top-title .image-element {
+  margin: 43px 0px;
+ }
+ .mens-section .mens-logo {
+  margin: 65px 0px;
+ }
+ .womans-button {
+  font-size: 14px;
+ }
+}
+
+@media only screen and (max-width:375px) {
+ .top-title .image-element {
+  margin: 29px 0px;
+ }
+ .mens-section .mens-logo {
+  margin: 50px 0px;
+ }
+ .womans-button {
+  font-size: 12px;
+ }
+ .mens-section {
+  margin-top: 120px;
+ }
+}
+
+@media only screen and (max-width:320px) {
+ .top-title {
+  font-size: 12px;
+ }
+ .image-element img {
+  max-width: 165px;
+ }
+ .top-title .image-element {
+  margin: 22px 0px;
+ }
+ .womans-button-wrapper button {
+  padding: 8px;
+ }
+ .mens-section {
+  margin-top: 98px;
+ }
+ .mens-section .mens-logo {
+  margin: 44px 0px;
  }
 }
 
