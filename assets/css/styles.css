@@ -103,6 +103,7 @@ a {
 }
 
 .dropdown button:hover {
+ margin-bottom: -2px;
  border-bottom: 2px solid black;
  text-decoration: none;
  color: black;
@@ -870,22 +871,4 @@ margin-bottom: 0px;
   -o-user-select: none;
   user-select: none;
  }
-}
-
-
-/*  Filters dropdowns */
-
-.dropdown:hover>.dropdown-menu {
- display: block;
-}
-
-.signup-btn:hover {
- color: inherit;
-}
-
-
-/*  Filters dropdowns */
-
-.dropdown:hover>.dropdown-menu {
- display: block;
 }

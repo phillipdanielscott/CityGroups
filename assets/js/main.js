@@ -560,9 +560,9 @@ $(document).ready(function() {
     // Clears all filters and defaults to whatever is the gender stored in local storage
     function clearFilters() {
         genderFilter();
-        $('#day-filter-btn').html("Select a Day")
-        $('#city-filter-btn').html("Select a City")
-        $('#childcare-filter-btn').html("All Childcare")
+        $('#day-filter-btn').html("Any Location")
+        $('#city-filter-btn').html("Any Day")
+        $('#childcare-filter-btn').html("Childcare")
     }
 
     // Adding listeners for filters
