@@ -8,6 +8,10 @@ button {
  border-radius: 0px !important;
 }
 
+.btn-secondary {
+ border-color: white;
+}
+
 .section {
  font-size: 6em;
  text-align: center;
@@ -234,6 +238,10 @@ a {
 .map iframe {
  width: 100%;
  height: 480px;
+ border: #d5d5d5;
+ position: relative;
+ top: -48px;
+ border: none;
 }
 
 .womans-button, .mens-button {
@@ -494,6 +502,13 @@ margin-bottom: 0px;
  }
 }
 
+@media only screen and (max-width:768px) {
+ td.td-spacing {
+  padding-left: 116px !important;
+  padding-right: 123px !important;
+ }
+}
+
 @media only screen and (max-width:500px) {
  .hero-image-container {
   background: url(/assets/img/mobile-bg.jpg) no-repeat;
@@ -526,6 +541,9 @@ margin-bottom: 0px;
   padding-right: 12px;
   background-color: white;
   color: black;
+ }
+ .womans-button {
+  padding: 6px 18px;
  }
  .signuplink {
   color: #292b2c;
@@ -632,8 +650,8 @@ margin-bottom: 0px;
   border-top: 0px !important;
  }
  td.td-spacing {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 65px !important;
+  padding-right: 65px !important;
  }
  .map-section {
   padding: 0px;
@@ -693,6 +711,10 @@ margin-bottom: 0px;
  .authentic-text h6 {
   font-size: 55px;
  }
+ td.td-spacing {
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+ }
 }
 
 @media only screen and (max-width:375px) {
@@ -743,6 +765,10 @@ margin-bottom: 0px;
  .mens-section .mens-logo {
   margin: 50px 0px;
   margin-bottom: 51px;
+ }
+ td.td-spacing {
+  padding-left: 45px !important;
+  padding-right: 45px !important;
  }
 }
 
@@ -795,6 +821,10 @@ margin-bottom: 0px;
  .mens-section .mens-logo {
   margin: 44px 0px;
   margin-top: 32px;
+ }
+ td.td-spacing {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
  }
 }
 
