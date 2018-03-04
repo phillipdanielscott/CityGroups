@@ -428,6 +428,7 @@ $(document).ready(function() {
         days.forEach(function(day) {
             $(`#day-${day}-filter`).click("click", function() {
                 dayFilter(day);
+                $('#day-filter-btn').html(`${day}`)
             });
         });
     }
@@ -435,6 +436,7 @@ $(document).ready(function() {
     // Adds a listener to the static any day link
     $('#anyday-filter').click('click', function() {
         dayFilter('any');
+        $('#day-filter-btn').html("Any Day")
     });
 
     // Gender Filter Functions
@@ -477,6 +479,7 @@ $(document).ready(function() {
             var formattedCity = formatCityString(city);
             $(`#${formattedCity}-filter`).click("click", function() {
                 cityFilter(formattedCity);
+                $('#city-filter-btn').html(`${city}`)
             });
         });
     }
@@ -543,7 +546,10 @@ $(document).ready(function() {
     function childcareFilter(val) {
         groupsList.filter(function(group) {
             var values = group.values();
-            if (values.kids === val & values.gender === localStorage.gender) {
+            if(val === 'No' && values.gender === localStorage.gender) {
+                return true
+            }
+            if (values.kids === 'Yes' && values.gender === localStorage.gender) {
                 return true;
             } else {
                 return false;
@@ -554,15 +560,20 @@ $(document).ready(function() {
     // Clears all filters and defaults to whatever is the gender stored in local storage
     function clearFilters() {
         genderFilter();
+        $('#day-filter-btn').html("Select a Day")
+        $('#city-filter-btn').html("Select a City")
+        $('#childcare-filter-btn').html("All Childcare")
     }
 
     // Adding listeners for filters
     $('#clear-filters').click("click", clearFilters);
     $('#no-childcare').click("click", function() {
         childcareFilter('No');
+        $('#childcare-filter-btn').html('No Childcare Needed');
     });
     $('#yes-childcare').click("click", function() {
         childcareFilter('Yes');
+        $('#childcare-filter-btn').html('Childcare Needed');
     });
 
     // Google Map
